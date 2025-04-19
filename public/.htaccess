@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /hospital_system/public/
+    
+    # Redirect to public folder if request comes to root
+    RewriteCond %{REQUEST_URI} !^/hospital_system/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    # Handle front controller
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
