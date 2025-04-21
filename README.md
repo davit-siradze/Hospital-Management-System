@@ -1,4 +1,4 @@
-# Hospital Management System
+# Hospital Management System v0.1 not full
 
 A simple hospital management system built with PHP and MySQL. This application allows users to log in, register, manage doctors, patients, and appointments, and more.
 
@@ -24,4 +24,3 @@ A simple hospital management system built with PHP and MySQL. This application a
 
 - PHP 8.0 or higher
 - MySQL
-- Composer (optional, if you need to install dependencies)
